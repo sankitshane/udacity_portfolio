@@ -1,0 +1,182 @@
+*
+{
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  word-wrap: break-word;
+}
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+body
+{
+  margin: 40px;
+}
+
+header
+{
+  width: 100%;
+  height:210px;
+
+}
+
+.link
+{
+    display: inline-block;
+    margin: 0 1em 0 0 ;
+}
+
+a
+{
+  text-decoration: none;
+  font-weight: bold;
+  color: #7d97ad;
+}
+
+.header-text
+{
+  float: right;
+  padding: 15px;
+  padding-right: 60px;
+
+
+}
+
+header img
+{
+  float: left;
+  margin: 5px;
+  margin-left: 30px;
+  transition: 1s;
+  width: inherit;
+  width: 70%;
+
+}
+
+hr{
+  margin-top: 20px;
+}
+
+
+.content
+{
+  width:100%;
+  height: auto;
+}
+
+.content img
+{
+  width:100%;
+  height : auto;
+}
+footer
+{
+  transition: 2s;
+  width: 100%;
+  height: auto;
+  margin-left: 30px;
+}
+
+footer h2
+{
+  margin-top: 10px;
+  margin-left: 25px;
+
+}
+
+.num3{
+  transition: 2s;
+}
+
+.footer-content
+{
+    width: inherit;
+    height: auto;
+
+}
+
+.foo
+{
+  margin: 5px;
+  text-align: center;
+}
+
+.foo img
+{
+  width: 90%;
+  height : inherit;
+
+}
+
+@media only screen and (max-width:350px) {
+  header img
+  {
+    transition: 1s;
+  }
+
+  footer
+  {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width:900px)
+{
+  footer
+  {
+    transition: 2s;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width:450px)
+{
+  header img
+  {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width:720px)
+{
+    .num1,.num2,.num3
+    {
+      width: 45%;
+    }
+    .foo
+    {
+      display: inline-block;
+    }
+    .foo img{
+      height: 170px;
+    }
+    .num3
+    {
+      margin-left: 25%;
+      margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width:1000px)
+{
+  .num3
+  {
+    margin: 5px;
+  }
+  .num1,.num2,.num3
+  {
+    width: calc(90%/3);
+    height: inherit;
+  }
+  .foo
+  {
+    display: inline-block;
+    height: inherit;
+  }
+}
